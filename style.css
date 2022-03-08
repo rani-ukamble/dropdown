@@ -12,13 +12,13 @@ body{
     opacity: 0.7;
     
     background-position: center;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     font-family: sans-serif;
 }
 
 .menu
 {
-    background: rgb(233, 236, 236);
+    background: rgb(133, 136, 133);
    
     text-align: center;
 }
@@ -26,7 +26,7 @@ body{
 .menu ul{
 display: inline-flex;
 list-style-type: none;
-color: rgb(0, 0, 0);
+color: rgb(250, 246, 246);
 width: 15px;
 
 }
@@ -40,11 +40,69 @@ padding: 15px;
 
 .menu ul li a{
     text-decoration: none;
-    color: rgb(1, 2, 2);
+    color: #fff;
+    /* color: rgb(252, 249, 249);
+    border: 1px solid transparent;
+    transition: 0.6 ease; */
 }
 
 .active, .menu ul li:hover
 {
-    background: #0e1981;
+    background: #999b99;
     border-radius: 3px;
 }
+
+/* ul li a:hover 
+{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a
+{
+    background-color: #fff;
+    color: #000;
+} */
+
+su
+
+.submenu1
+{
+    display: none;
+}
+
+.menu ul li:hover .submenu1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,100,0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu ul li:hover .submenu1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu ul li:hover .submenu1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+
+}
+
+.menu ul li:hover .submenu1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+
+
+
+
